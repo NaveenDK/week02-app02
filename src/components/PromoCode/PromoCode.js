@@ -31,6 +31,34 @@ class PromoCodeDiscount extends Component {
           {this.state.open === false ? `Apply ` : "Hide "}
           promo code {this.state.open === false ? `+` : `-`}
         </Button>
+        <Collapse in={this.state.open}>
+          <div>
+            <Row className="show-grid">
+              <Col md={12}>
+                <Form>
+                  <FormGroup controlId="formInlineName">
+                    <Form.Label>Promo Code</Form.Label>
+                    <FormControl
+                      type="text"
+                      placeholder="Enter promo code"
+                      value={this.props.promoCode}
+                      onChange={this.handleChange}
+                    />
+                  </FormGroup>
+                  <Button
+                    block
+                    bsStyle="success"
+                    className="btn-round"
+                    disabled={this.props.isDisabled}
+                    onClick={this.props.giveDiscount}
+                  >
+                    Apply
+                  </Button>
+                </Form>
+              </Col>
+            </Row>
+          </div>
+        </Collapse>
       </div>
     );
   }
