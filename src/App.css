@@ -36,3 +36,15 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1em;
 }
+.item-details-button {
+  outline: none;
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+}
+.item-details-button :hover {
+  outline: none;
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+}
