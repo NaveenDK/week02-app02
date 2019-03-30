@@ -52,3 +52,11 @@
   text-decoration-line: line-through;
   color: grey;
 }
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: grey;
+  height: 1px;
+}
