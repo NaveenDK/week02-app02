@@ -36,13 +36,27 @@ export default class ItemDetails extends Component {
           {this.state.open === false ? `+` : `-`}
         </Button>
         <Collapse in={this.state.open}>
-          <div style={styleImg}>
+          <div>
             <img
+              style={styleImg}
               width={100}
               height={160}
               alt="thumbnail"
               src="./images/iphonex.png"
             />
+            <div>
+              <p>Essentials by IOP Iphone X, best of the best so far</p>
+              <Row className="show=grid">
+                <Col md={6}>
+                  <strong>{`$${this.props.price}`}</strong>
+                  <br />
+                  <strong className="price-strike">{`$${
+                    this.props.price
+                  }`}</strong>
+                </Col>
+                <Col md={6}> Qty:1 </Col>
+              </Row>
+            </div>
           </div>
         </Collapse>
       </div>

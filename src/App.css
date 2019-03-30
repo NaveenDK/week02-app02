@@ -48,3 +48,7 @@
   background-color: transparent;
   border-color: transparent;
 }
+.price-strike {
+  text-decoration-line: line-through;
+  color: grey;
+}
